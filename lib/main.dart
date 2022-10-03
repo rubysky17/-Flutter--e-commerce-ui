@@ -1,4 +1,5 @@
 import 'package:e_commerce_ui/main/constant.dart';
+import 'package:e_commerce_ui/main/routes.dart';
 import 'package:e_commerce_ui/main/screens/splash/splash_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -27,7 +28,9 @@ class MyApp extends StatelessWidget {
           ),
         ),
       ),
-      home: SplashScreen(),
+      // home: SplashScreen(),
+      initialRoute: SplashScreen.routeName,
+      routes: routes,
     );
   }
 }
